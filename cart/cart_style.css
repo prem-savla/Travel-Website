@@ -1,0 +1,131 @@
+
+
+ .payment-form {
+        background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .payment-form h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .payment-form input {
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .payment-form button {
+        background-color: #6364FF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+        margin-right:20px;
+        margin-left:20px;
+    }
+    .payment-form button:hover {
+        background-color: #1c368d;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    #paymentForm{
+        display: flex;
+        flex-direction: column;
+        max-width: 40vw;
+    }
+    .cart>h2 {
+        font-size: 3.5rem;
+    }
+    #cartItems>div>p{
+        font-size: 2rem;
+    }
+    .cart>p{
+        font-size: 2rem;
+        font-weight: 700;
+        background: linear-gradient(to right, #2545fc,
+        #0de3eb, #100a2e, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .payment-form>h2{
+        font-size: 3.5rem;
+    }
+    .split {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+       
+    }
+    .left {
+        flex: 1;
+        margin-right: 10px;
+        min-width: 50vw
+    }
+    .right {
+        flex: 1;
+        margin-left: 10px;
+    }
+    .remove {
+        background-color:#6364FF; 
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 2px 1px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition-duration: 0.15s;
+
+      }
+      
+      .remove:hover {
+        background-color:rgb(197, 197, 237); 
+      }
+      
+      .remove:active {
+        transform: scale(0.95); /* Scale down when clicked */
+      }
+
+      .hide {
+        display:hidden;
+        
+  
+      }
+      .unhide{
+        position: fixed;
+        top:20vh;
+        left: 35vw;
+        padding: 20px;
+        height:60vh;
+        width: 30vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color:#f7f7f7 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .containerPop>img{
+        
+        margin: 10px;
+        height: 40vh;
+        width: 20vw;
+      }
+      .total{
+        text-align: center;
+        font-size: 2.5rem;
+      }
+      .containerPop>button{
+        width:20vw;
+        font-size: 2rem;
+      }

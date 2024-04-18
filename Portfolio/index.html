@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="8-utf">
+	<title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c1712bd90.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class = "vv">
+        <video autoplay muted loop id="video">
+            <source src = "bg_white.mp4" type="video/mp4" >
+        </video>
+    </div>
+    <div id = "header">
+        <div class = "container">
+            <nav>
+                <h1></h1>
+                <ul>
+                    <div id="bar">
+                        <li><a href="#header"><strong>Welcome</strong></a></li>
+                        <li><a href="#about"><strong>About Me</strong></a></li>
+                        <li><a href="#portfolio"><strong>Projects</strong></a></li>
+                        <li><a href="#contact"><strong>Contact</strong></a></li>
+                        <li><i class="fa-solid fa-yin-yang" id = "icon" onclick = "changeIcon()"></i></li>
+                    </div>
+                    <div id = "linesbar" onclick="show()">
+                        <li>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <div class = "header-text">
+                <p>Hi,</p>
+                <h1>I am <span>Prem Savla</span><br>22BCE2005</h1>
+            </div>
+        </div>   
+    </div>
+    
+<!-- ----------------About-------------- -->
+    <div class="trans-box">
+        <div id="about">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "about-col-1">
+                        <img src = "images/id.jpeg">
+                    </div>
+                    <div class = "about-col-2">
+                        <h1 class = "subtitle">About Me</h1>
+                        <p>Hi, my name is Prem Savla, I am currently a 2nd year studnet<br> 
+                            at VIT Vellore. I am an aspiring front-end developer having knowledge<br> 
+                            about HTML, CSS, JS and React. I am creatively inclined, therefore<br> 
+                            have huge idea about websites and webpages. If you want to create<br>
+                            something out of the world, you can contact me.
+                        </p>
+                        
+                        <div class = "tab-titles">
+                            <p class = "tab-links active-link" onclick = "opentab('skills')">Skills</p>
+                            <p class = "tab-links" onclick = "opentab('experience')">Experience</p>
+                            <p class = "tab-links" onclick = "opentab('education')">Education</p>
+                        </div>
+                        <div class = "tab-contents active-tab" id = "skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                                <li><span>Web development</span><br>Implementing Real World Websites</li>
+                                <li><span>DSA</span><br>Knowledge about the important algorithms</li>
+                            </ul>
+                        </div>
+                        <div class = "tab-contents" id = "experience">
+                            <ul>
+                                <li><span>2023-Current</span><br>UI/UX Design Training at VIT Istitute</li>
+                                <li><span>2022-2023</span><br>Team lead at StarApp LLC.</li>
+                                <li><span>2020-2023</span><br>Created a program for Car dealership</li>
+                            </ul>
+                        </div>
+                        <div class = "tab-contents" id = "education">
+                            <ul>
+                                <li><span>2026</span><br>B.Tech from VIT, Vellore</li>
+                                <li><span>2022</span><br>XII from St. Xavier's School, Nevta</li>
+                                <li><span>2020</span><br>X from St. Xavier's School, Nevta</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lang-known">
+            <div class = "Languages">
+                <h1 class="lang">Languages known</h1>
+                <div class = "row1">
+                    <p><i class="fa-brands fa-python" style="color: #74C0FC;"></i> Python</p>
+                    <p><i class="fa-brands fa-java" style="color: #B197FC;"></i> Java</p>
+                    <p><i class="fa-brands fa-html5" style="color: #ff9b3d;"></i> Html</p>
+                </div>
+                <div class = "row2">
+                    <p><i class="fa-brands fa-css3-alt" style="color: #3b6af7;"></i> CSS</p>
+                    <p><i class="fa-brands fa-js" style="color: #e9da2f;"></i> Java Script</p>
+                    <p><i class="fa-solid fa-c" style="color: #63E6BE;"></i> </p>
+                </div>
+                <div class = "row3">
+                    <p><i class="fa-solid fa-c" style="color: #41ea1f;"></i><i class="fa-solid fa-plus" style="color: #41ea1f;"></i><i class="fa-solid fa-plus"  style="color: #41ea1f;"></i> </p>
+                    <p><i class="fa-brands fa-react" style="color: #63E6BE;"></i> React</p>
+                    <p><i class="fa-solid fa-database" style="color: #ff6666;"></i> SQL Database</p>
+                </div>
+            </div>
+        </div>
+
+        <h1 class = "reshead">Resume</h1>
+        <div class = "resume">
+            <div class = "resume-col-1">
+                <h1 id = "me1">About</h1>
+                <h2 id = "me2">Front-end Developer</h2>
+                <p>I am an aspiring website developer currently studying in VIT Vellore. My roots are from Mumbai, Maharashtra. I am hardworking individual with a fire within to make a impact on the world.</p>
+                <div>
+                    <h1>Contact</h1>
+                    <ul>
+                        <li>+91 9930235757</li>
+                        <li>premsavla@gmail.com</li>
+                        <li>N-Block, VIT University, Vellore</li>
+                    </ul>
+                </div>
+                <div class = "edu">
+                    <h1>Education</h1>
+                    <h2>Secondary</h2>
+                    <ul>
+                        <li>2013-2020</li>
+                        <li>Omkar Cambridge, Mumbai</li>
+                        <li>IGCSE Board</li>
+                        <li>90.8%</li>
+                    </ul>
+
+                    <h2>Higher Secondar</h2>
+                    <ul>
+                        <li>2020-2022</li>
+                        <li>Pace junior College, Mumbai</li>
+                        <li>PCM</li>
+                        <li>84%</li>
+                    </ul>
+
+                    <h2>Engineering</h2>
+                    <ul>
+                        <li>2022-2026</li>
+                        <li>Vellore Institute of Technology, Vellore</li>
+                        <li>Computer Science Engineering</li>
+                        <li>CGPA: 8.97</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Languages</h1>
+                    <ul>
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>French</li>
+                    </ul>
+                </div>
+
+                
+            </div>
+            
+            <div class = "resume-col-2">
+                <div>
+                    <h1 id = "me3">Technical Skills</h1>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>ReactJS</li>
+                        <li>MySQl</li>
+                        <li>Python</li>
+                        <li>CPP</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Soft Skills</h1>
+                    <ul>
+                        <li>Leadership Skills</li>
+                        <li>Teamwork</li>
+                        <li>Verbal and Written Communication</li>
+                        <li>Public Speaking</li>
+                        <li>Marketing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Volunteer Work</h1>
+                    <h2>I Can Foundation</h2>
+                    <p>I was in charge of education unprivileged children. We conduction regular tution sessions for the kids. We also conducted various informative sessions for the parents. We successfuly improved their test scores.</p>
+
+                    <h2>Kadam Foundation</h2>
+                    <p>I was on of the founding members in this foundation. We performed various plantation drives. We conducted session education people about the need of an healthy and greener environement.</p>
+                </div>
+                <div>
+                    <h1>Projects</h1>
+                    
+                    <h2>Personal Portfolio Website</h2>
+                    <p>In this project I created a personal portfolio website using HTML, CSS and Javascript</p>
+                    <ul>
+                        <li>UI and UX: Built a user appealing website emphasizing on user satisfaction.</li>
+                        <li>Responsive: Implemented features for a responsive website so that the user can interact with it.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class = "resbtndiv">
+            <p download class = "resbtn"> Download Resume</p>
+        </div>
+    </div>
+
+
+<!-- -------------------Projects------------------------- -->
+
+
+    <div class="trans-box">
+    <div id = "portfolio">
+    <div class = "container">
+        <h1 class  = "sub-title">My Work</h1>
+        <div class = "work-list">
+            <div class = "projectrow1">
+                    <div class = "work">
+                    <img src = "images/img1.webp">
+                    <div class = "layer">
+                        <h3>Caroline Seiffert</h3>
+                        <a href = "https://carolineseiffert.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class = "work">
+                    <img src = "images/img2.webp">
+                    <div class = "layer">
+                        <h3>LITTLE ASHÉ</h3>
+                        <a href = "https://littleashe.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class = "work">
+                    <img src = "images/img5.webp">
+                    <div class = "layer">
+                        <h3>Nullpunkt</h3>
+                        <a href = "https://nullpunkt.co/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "projectrow2">
+                <div class = "work">
+                    <img src = "images/img3.webp">
+                    <div class = "layer">
+                        <h3>Contentary</h3>
+                        <a href = "https://contentary-agency.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class = "work">
+                    <img src = "images/img4.webp">
+                    <div class = "layer">
+                        <h3>WeatherWorks</h3>
+                        <a href = "https://weatherworks.lokkeestudios.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class = "work">
+                    <img src = "images/img6.webp">
+                    <div class = "layer">
+                        <h3>Lockey</h3>
+                        <a href = "https://lockey.lokkeestudios.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+    </div>
+    </div>
+
+<!-- ----------------------Contact------------------- -->
+
+<div class="trans-box2">
+    <div id = "contact">
+        <div class = "container1">
+            <div class = "row">
+                <div class = "contact-left">
+                    <h1 class = "sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>premsavla@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9930235757</p>
+                    <div class = "social-icons">
+                        <a href = "https://www.linkedin.com/in/premsavla/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href = "https://github.com/prem-savla"><i class="fa-brands fa-github"></i></a>
+                        <a href = "https://instagram.com/prem.savla"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class = "contact-right">
+                    <form>  
+                        <input class = "hello" type = "text" name = "Name" placeholder = "Your Name" required>
+                        <input class = "hello" type = "email" name = "email" placeholder = "Your Email" required>
+                        <textarea class = "hello" name = "Message" rows = "6" placeholder = "Your Message" required></textarea>
+                        <button id = "contact-button" type = "submit" class = "btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+<!-- --------------------Source Code--------------------------- -->
+
+<div class = "src trans-box1">
+        
+        <div class = "vid">
+            <video autoplay loop muted>
+            <source src = "matrix_-_47802 (1080p).mp4" type = "video/mp4">
+            </video>
+
+            <div class = "vidtext">
+                <h1>Behind the simulation</h1>
+                <p>You take the <span>blue pill</span> - you keep scrolling, you leave this site and believe whatever<br>
+                    you want to believe. You take the <span style="color: red;">red pill</span> - you stay in wonderland, and I show you<br>
+                    how deep the rabbit hole goes.</p>
+                <a href="https://github.com/prem-savla/Portfolio">
+                    <button>Source Code</button>
+                </a>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>
